@@ -4,9 +4,131 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>تطبيق التبرع بالدم</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to left, #d32f2f, #c2185b);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .app-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    .app-card h2 {
+      color: #c2185b;
+      margin-bottom: 10px;
+    }
+
+    .app-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .app-card ul li {
+      background: #fbe9e7;
+      border: 1px solid #f8bbd0;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: #d32f2f;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #b71c1c;
+    }
+
+    .gallery {
+      margin-bottom: 40px;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .contact, .privacy {
+      background: #fff3e0;
+      border: 1px solid #ffe0b2;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+
+    .contact h2, .privacy h2 {
+      color: #e65100;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <img src="images/logo.jpg" alt="شعار التطبيق" class="logo" />
     <h1>تطبيق التبرع بالدم</h1>
@@ -17,15 +139,15 @@
     <div class="app-card">
       <h2>ما هو التطبيق؟</h2>
       <p>
-        تطبيق التبرع بالدم هو أداة ذكية تهدف إلى ربط المحتاجين للدم بالمتبرعين المتاحين في أقرب وقت ممكن. التطبيق يعمل على تسهيل عملية البحث عن متبرعين وإنشاء طلبات دم، مع عرض فصائل الدم والمواقع القريبة.
+        تطبيق التبرع بالدم هو أداة ذكية تهدف إلى ربط المحتاجين للدم بالمتبرعين المتاحين في أقرب وقت ممكن. يساعدك في تسهيل الوصول إلى المتبرعين وإنشاء طلبات دم بشكل فوري وذكي.
       </p>
 
       <h2>الميزات الرئيسية:</h2>
       <ul>
         <li>🔴 قائمة المتبرعين حسب الفصيلة والموقع</li>
         <li>📝 إنشاء طلبات دم فورية</li>
-        <li>📍 خريطة المستشفيات والبنوك</li>
-        <li>📲 إشعارات للمتبرعين الأقرب</li>
+        <li>📍 خريطة المستشفيات وبنوك الدم</li>
+        <li>📲 إشعارات فورية للمتبرعين</li>
         <li>🏆 نظام نقاط وشارات للمساهمين</li>
       </ul>
 
@@ -40,21 +162,34 @@
         <img src="images/screen2.jpg" alt="واجهة 2" />
         <img src="images/screen3.jpg" alt="واجهة 3" />
         <img src="images/screen4.jpg" alt="واجهة 4" />
+        <img src="images/screen5.jpg" alt="واجهة 5" />
+        <img src="images/screen6.jpg" alt="واجهة 6" />
       </div>
     </section>
 
     <div class="contact">
       <h2>📬 تواصل معنا</h2>
       <ul>
-        <li>📧 البريد: almontheraziz@gmail.com</li>
+        <li>📧 البريد الإلكتروني: nestcode213@gmail.com</li>
         <li>📱 واتساب: 770716164</li>
-        <li>🌐 الموقع الرسمي: www.bloodapp.com</li>
+        <li>🌐 الموقع الرسمي: <a href="https://github.com/almunth/CodeNest.git" target="_blank">www.bloodapp.com</a></li>
       </ul>
+    </div>
+
+    <div class="privacy">
+      <h2>🔒 سياسة الخصوصية</h2>
+      <p>
+        نحن نحترم خصوصيتك! لا يتم جمع أو مشاركة أي معلومات شخصية بدون موافقتك. جميع البيانات محمية وتُستخدم فقط لأغراض إنسانية متعلقة بالتبرع بالدم. لمزيد من التفاصيل، يمكنك مراجعة الشروط عند استخدام التطبيق.
+      </p>
     </div>
   </main>
 
   <footer>
-    <p>© 2025 تطبيق التبرع بالدم - منذر عزيز</p>
+    <p>© 2025 تطبيق التبرع بالدم <v class="1 1"></v>- المنذر عزيز</p>
+    <p>جميع الحقوق محفوظة.</p>
+    <p>تم تطويره بواسطة <a href="https://github.com/almunth/CodeNest.git" target="_blank">NestCode</a></p>
+    <p>تابعنا على وسائل التواصل الاجتماعي!</p>
   </footer>
+
 </body>
 </html>
